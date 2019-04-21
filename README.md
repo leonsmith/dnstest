@@ -30,7 +30,15 @@ pip install dnstest
 
 TODO:
 
-`dnstest ./example-config.yml`
+```bash
+python -m dnstest ./example-config.yml
+Using config: ./example-config.yml
+Using nameservers: 1.1.1.1, 1.0.0.1
+example.com A .
+www.example.com A .
+SPF Records ..
+example.com NS ..
+```
 
 
 ## Documentation

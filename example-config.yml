@@ -1,0 +1,30 @@
+nameservers:
+  - 1.1.1.1
+  - 1.0.0.1
+checks:
+  - record:
+      domain: example.com
+      type: A
+    matches: 93.184.216.34
+
+  - record:
+      domain: www.example.com
+      type: A
+    matches: 93.184.216.34
+
+  - name: SPF Records
+    record:
+      domain: example.com
+      type: TXT
+    matches:
+      - value: v=spf1
+        method: substring
+      - value: -all
+        method: substring
+
+  - record:
+      domain: example.com
+      type: NS
+    matches:
+      - a.iana-servers.net.
+      - b.iana-servers.net.

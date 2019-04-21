@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "dnstest"
+version = "0.1.0-alpha"
+description = "A cli tool for testing DNS records match a provided yaml config file"
+authors = ["Leon Smith <_@leonmarksmith.com>"]
+readme = "README.md"
+repository = "https://github.com/leonsmith/dnstest"
+homepage = "https://github.com/leonsmith/dnstest"
+keywords = [
+    "dns",
+    "test",
+    "dnstest",
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Intended Audience :: Developers",
+    "Topic :: Internet :: Name Service (DNS)",
+    "Topic :: System :: Monitoring",
+    "Topic :: Utilities"
+]
+
+[tool.poetry.dependencies]
+python = "^3.5"
+click = "^7.0"
+PyYaml = "^5.1"
+cerberus = "^1.2"
+pydig = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+pytest-cov = "^2.6"
+
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

@@ -30,7 +30,8 @@ pydig = "^0.2.0"
 pytest = "^3.0"
 pytest-cov = "^2.6"
 
-
+[tool.poetry.scripts]
+dnstest = "dnstest.cli:main"
 
 [build-system]
 requires = ["poetry>=0.12"]
